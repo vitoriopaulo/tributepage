@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    font-family: Raleway, Roboto, sans-serif; /* Set font family for the entire body */
+}
+
+#title {
+    color: red;
+}
+
+#paragraph {
+    font-size: 1em;
+    color: white;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#img-caption {
+    color: white; /* Set text color for caption */
+    padding: 10px; /* Add padding for better spacing */
+    text-align: center; /* Center align the caption text */
+}
+
+#tribute-info {
+    /* Inherits font-family from body */
+}
+
+footer {
+    color: white;
+    display: block;
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center align footer text */
+}
