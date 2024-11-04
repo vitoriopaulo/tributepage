@@ -19,6 +19,7 @@ body {
     font-size: 1rem; /* Responsive font size */
     color: var(--text-color);
     margin-bottom: 1em; /* Space between paragraphs */
+    text-align: left; /* Align paragraphs to the left */
 }
 
 #img-div {
