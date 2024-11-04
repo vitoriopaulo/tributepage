@@ -1,15 +1,22 @@
+:root {
+    --background-color: black;
+    --primary-color: #ff6347; /* Light red */
+    --text-color: white;
+}
+
 body {
-    background-color: black;
-    font-family: Raleway, Roboto, sans-serif; /* Set font family for the entire body */
+    background-color: var(--background-color);
+    font-family: Raleway, Roboto, sans-serif;
 }
 
 #title {
-    color: red;
+    color: var(--primary-color);
 }
 
 #paragraph {
-    font-size: 1em;
-    color: white;
+    font-size: 1rem; /* Responsive font size */
+    color: var(--text-color);
+    margin-bottom: 1em; /* Space between paragraphs */
 }
 
 #image {
@@ -19,18 +26,31 @@ body {
 }
 
 #img-caption {
-    color: white; /* Set text color for caption */
-    padding: 10px; /* Add padding for better spacing */
-    text-align: center; /* Center align the caption text */
+    color: var(--text-color);
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 #tribute-info {
     /* Inherits font-family from body */
 }
 
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
 footer {
-    color: white;
-    display: block;
-    padding: 20px; /* Add padding for spacing */
-    text-align: center; /* Center align footer text */
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
 }
