@@ -14,7 +14,7 @@ body {
 }
 
 #title {
-    background-color: var(--background-color);
+    background-color: #ff6347; /* Light red */
     font-family: Raleway, Roboto, sans-serif;
 }
 
