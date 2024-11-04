@@ -11,11 +11,12 @@ body {
     height: 100vh; /* Full viewport height */
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Column layout */
-    justify-content: center; /* Center vertically */
 }
 
 header {
     text-align: center;
+    z-index: 1; /* Ensure header is above the image */
+    position: relative; /* Position relative to control stacking */
 }
 
 #main {
@@ -25,32 +26,45 @@ header {
     justify-content: center; /* Center elements vertically */
     text-align: center; /* Center text */
     flex-grow: 1; /* Allow main to grow to fill available space */
+    position: relative; /* Control stacking context */
 }
 
-#title {
-    color: var(--primary-color);
-}
-
-#paragraph {
-    font-size: 1rem; /* Responsive font size */
-    color: var(--text-color);
-    margin-bottom: 1em; /* Space between paragraphs */
+#img-div {
+    position: relative; /* Position relative for absolute children */
+    width: 100vw; /* Full width of viewport */
+    height: 100vh; /* Full height of viewport */
+    overflow: hidden; /* Hide overflow */
 }
 
 #image {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    min-height: 100%; /* Ensure it covers the viewport */
+    min-width: 100%; /* Ensure it covers the viewport */
+    transform: translate(-50%, -50%); /* Centering technique */
+    z-index: 0; /* Send image behind other content */
 }
 
 #img-caption {
     color: var(--text-color);
     padding: 15px;
     margin-bottom: 1em;
+    position: relative; /* Above the image */
+    z-index: 1; /* Ensure caption is above the image */
 }
 
 #tribute-info {
-    /* Inherits font-family from body */
+    position: relative; /* Above the image */
+    z-index: 1; /* Ensure info is above the image */
+}
+
+#paragraph {
+    font-size: 1rem; /* Responsive font size */
+    color: var(--text-color);
+    margin-bottom: 1em; /* Space between paragraphs */
 }
 
 a {
@@ -70,4 +84,6 @@ footer {
     align-items: center;
     padding: 20px;
     text-align: center;
+    position: relative; /* Above the image */
+    z-index: 1; /* Ensure footer is above the image */
 }
