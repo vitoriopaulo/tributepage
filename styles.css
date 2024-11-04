@@ -7,10 +7,12 @@
 body {
     background-color: var(--background-color);
     font-family: Raleway, Roboto, sans-serif;
+    margin: 0; /* Remove default body margin */
 }
 
 #title {
     color: var(--primary-color);
+    text-align: center; /* Center the title */
 }
 
 #paragraph {
@@ -19,21 +21,26 @@ body {
     margin-bottom: 1em; /* Space between paragraphs */
 }
 
+#img-div {
+    width: 100%; /* Full width of the viewport */
+}
+
 #image {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 100%; /* Make the image take the full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure no extra space below the image */
 }
 
 #img-caption {
     color: var(--text-color);
     padding: 15px;
-    text-align: center;
+    text-align: center; /* Center the caption */
     margin-bottom: 1em;
 }
 
 #tribute-info {
     /* Inherits font-family from body */
+    text-align: center; /* Center text in tribute info */
 }
 
 a {
