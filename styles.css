@@ -16,10 +16,6 @@ body {
 #title {
     color: #ff6347; /* Light red */
     font-family: Raleway, Roboto, sans-serif;
-}
-
-header {
-    color: #ff6347; /* Light red */
     text-align: center;
     z-index: 1; /* Ensure header is above the image */
     position: relative; /* Position relative to control stacking */
