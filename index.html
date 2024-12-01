@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMfMwH2P2k5itgW5f5g9d6p9/0jz7c4aQ8q9sz" crossorigin="anonymous">
   <title>Pelicula Coffee Table - A Glamorous Tribute to the American Movie Industry</title>
 </head>
 <body>
@@ -15,12 +16,24 @@
     <h1 id="title">Pelicula Coffee Table - A Glamorous Tribute to the American Movie Industry</h1>
   </header>
   <main id="main">
-    <section id="img-div">
+    <section id="gallery">
+      <div id="img-container">
+        <button class="nav-button" id="prev-button"><i class="fas fa-chevron-left"></i></button>
+        <img id="image" src="photos/image1.jpg" alt="Gallery Image">
+        <button class="nav-button" id="next-button"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div id="dots-container">
+        <span class="dot" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+        <span class="dot" data-index="4"></span>
+        <span class="dot" data-index="5"></span>
+        <span class="dot" data-index="6"></span>
+      </div>
       <div id="img-caption">A passionate and honorable tribute to the American Movie Industry</div>
-      <a id="tribute-link" href="https://www.vitoriopaulo.com/portfolio-collections/pelicula-coffee-table-a-glamorous-tribute-to-the-american-movie-industry/pelicula-coffe-table-a-glamorous-tribute-to-the-american-film-industry" target="_blank">
-        <img id="image" src="https://i.postimg.cc/mrWWfqvn/mesapelicula03.jpg" alt="Pelicula Coffee Table showcasing American film industry art">
-      </a>
-      <div id="tribute-info">
+    </section>
+    <div id="tribute-info">
         <p id="paragraph">Introducing the Película Coffee Table, an exquisite homage to the illustrious American film industry.</p>
         <p id="paragraph">This stunning piece features a robust stainless steel frame that elegantly supports a tabletop crafted from clear, rounded tempered glass, adorned with a layer of captivating printed graphic art.</p>
         <p id="paragraph">The table narrates the rich history of American cinema, capturing the essence of Hollywood's golden age from the early decades of the twentieth century—highlighting classics like A Streetcar Named Desire—to the iconic films of the early twenty-first century, including American Beauty.</p>
@@ -28,11 +41,12 @@
         <p id="paragraph">Targeted towards the luxury market, this piece is tailored for discerning individuals who appreciate form and aesthetics while valuing exclusivity, originality, creativity, boldness, and a touch of irreverence.</p>
         <p id="paragraph">Are you in search of a furniture piece that ignites passion and will be cherished for a lifetime?</p>
         <p id="paragraph"><a class="e-mail" href="mailto:vitoriopaulo.arch@gmail.com" target=" .blank">Email the architect, Vitorio Paulo</a> today. It would be a delight to create a work of art that captures your heart at first glance.</p>
-      </div>
-    </section>
+    </div>
     <footer>
       <p>Made with <span style="color: red;">&hearts;</span> by Vitorio Paulo</p>
     </footer>
   </main>
+
+  <script src="scripts.js"></script>
 </body>
 </html>

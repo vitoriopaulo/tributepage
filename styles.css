@@ -15,21 +15,50 @@ body {
     text-align: center; /* Center the title */
 }
 
-#paragraph {
-    font-size: 1rem; /* Responsive font size */
-    color: var(--text-color);
-    margin-bottom: 1em; /* Space between paragraphs */
-    text-align: left; /* Align paragraphs to the left */
+#gallery {
+    position: relative; /* For absolute positioning of the buttons */
+    width: 100%; /* Full width for the gallery */
 }
 
-#img-div {
-    width: 100%; /* Full width of the viewport */
+#img-container {
+    display: flex;
+    align-items: center; /* Center the image vertically within the container */
+    justify-content: center; /* Center the image horizontally */
 }
 
 #image {
-    width: 100%; /* Make the image take the full width */
+    width: 100%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure no extra space below the image */
+    max-width: 800px; /* Optional: Set a max-width for larger screens */
+}
+
+.nav-button {
+    background-color: transparent;
+    border: none; /* Remove button border */
+    color: var(--text-color);
+    font-size: 2em; /* Size of the navigation buttons */
+    cursor: pointer; /* Pointer cursor for buttons */
+    padding: 10px; /* Add some padding */
+    margin: 0 10px; /* Space between buttons and image */
+}
+
+#dots-container {
+    text-align: center; /* Center the dots */
+    margin: 10px 0; /* Space around dots */
+}
+
+.dot {
+    height: 10px; /* Size of the dot */
+    width: 10px; /* Size of the dot */
+    margin: 0 5px; /* Space between dots */
+    background-color: white; /* Default color for dots */
+    border-radius: 50%; /* Make circles */
+    display: inline-block; /* For inline display */
+    opacity: 0.5; /* Default opacity for inactive dots */
+}
+
+.dot.active {
+    opacity: 1; /* Full opacity for active dot */
 }
 
 #img-caption {
@@ -40,8 +69,14 @@ body {
 }
 
 #tribute-info {
-    /* Inherits font-family from body */
-    text-align: center; /* Center text in tribute info */
+    text-align: left; /* Align text to the left */
+    margin: 0 15%; /* Align text to both limits of the h1 element */
+}
+
+#paragraph {
+    font-size: 1rem; /* Responsive font size */
+    color: var(--text-color);
+    margin-bottom: 1em; /* Space between paragraphs */
 }
 
 a {

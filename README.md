@@ -14,6 +14,10 @@ The **Pelicula Coffee Table** pays a passionate and honorable tribute to the Ame
 
 I hope you enjoy this project as much as I enjoyed creating it!
 
+## Tech stack
+
+This page was built with **HTML**, **CSS**, and **Javascript**.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
