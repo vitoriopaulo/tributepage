@@ -2,6 +2,7 @@
     --background-color: black;
     --primary-color: #ff6347; /* Light red */
     --text-color: white;
+    --icon-color: white; /* Set icon color to white for visibility */
 }
 
 body {
@@ -18,6 +19,7 @@ body {
 #gallery {
     position: relative; /* For absolute positioning of the buttons */
     width: 100%; /* Full width for the gallery */
+    padding: 0 15px; /* Small margin on left and right */
 }
 
 #img-container {
@@ -35,11 +37,27 @@ body {
 .nav-button {
     background-color: transparent;
     border: none; /* Remove button border */
-    color: var(--text-color);
+    color: white; /* Set icon color to white */
     font-size: 2em; /* Size of the navigation buttons */
     cursor: pointer; /* Pointer cursor for buttons */
     padding: 10px; /* Add some padding */
     margin: 0 10px; /* Space between buttons and image */
+    opacity: 0.8; /* Slight transparency for style */
+    transition: opacity 0.3s; /* Smooth hover effect */
+}
+
+.nav-button:hover {
+    opacity: 1; /* Full visibility on hover */
+}
+
+.nav-button svg {
+    fill: white; /* Ensure white color */
+    transition: transform 0.2s, opacity 0.2s; /* Smooth transitions */
+}
+
+.nav-button:hover svg {
+    transform: scale(1.2); /* Slight zoom on hover */
+    opacity: 0.9; /* Slightly dim effect */
 }
 
 #dots-container {
@@ -74,9 +92,9 @@ body {
 }
 
 #paragraph {
-    font-size: 1rem; /* Responsive font size */
+    font-size: 1.1rem; /* Increased font size for paragraphs */
     color: var(--text-color);
-    margin-bottom: 1em; /* Space between paragraphs */
+    margin-bottom: 1.5em; /* Increased space between paragraphs */
 }
 
 a {
