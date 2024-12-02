@@ -22,10 +22,21 @@ body {
     padding: 0 15px; /* Small margin on left and right */
 }
 
+#/* Centering gallery images on mobile */
 #img-container {
     display: flex;
-    align-items: center; /* Center the image vertically within the container */
-    justify-content: center; /* Center the image horizontally */
+    flex-direction: column; /* Ensure vertical stacking */
+    align-items: center;
+    justify-content: center; /* Center vertically and horizontally */
+    padding: 0 15px; /* Add padding to center on mobile devices */
+}
+
+/* Adjust paragraph spacing for readability */
+#paragraph {
+    font-size: 1.1rem; /* Ensure consistent text size */
+    line-height: 1.5em; /* 50% more spacing between lines */
+    color: var(--text-color);
+    margin-bottom: 1.5em; /* Space between paragraphs */
 }
 
 #image {
@@ -37,27 +48,11 @@ body {
 .nav-button {
     background-color: transparent;
     border: none; /* Remove button border */
-    color: white; /* Set icon color to white */
+    color: var(--icon-color); /* Set icon color to white for visibility */
     font-size: 2em; /* Size of the navigation buttons */
     cursor: pointer; /* Pointer cursor for buttons */
     padding: 10px; /* Add some padding */
     margin: 0 10px; /* Space between buttons and image */
-    opacity: 0.8; /* Slight transparency for style */
-    transition: opacity 0.3s; /* Smooth hover effect */
-}
-
-.nav-button:hover {
-    opacity: 1; /* Full visibility on hover */
-}
-
-.nav-button svg {
-    fill: white; /* Ensure white color */
-    transition: transform 0.2s, opacity 0.2s; /* Smooth transitions */
-}
-
-.nav-button:hover svg {
-    transform: scale(1.2); /* Slight zoom on hover */
-    opacity: 0.9; /* Slightly dim effect */
 }
 
 #dots-container {
@@ -114,4 +109,30 @@ footer {
     align-items: center;
     padding: 20px;
     text-align: center;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 600px) {
+    .nav-button {
+        font-size: 1.5em; /* Smaller icon size on mobile */
+    }
+
+    #img-container {
+        flex-direction: column; /* Stack navigation buttons and image vertically */
+        padding: 0; /* Remove padding for mobile */
+        align-items: center; /* Center align items in the container */
+        margin: 0 auto; /* Center the container */
+    }
+
+    #image {
+        max-width: 90%; /* Reduce width for more margin on mobile */
+        margin: 0; /* Remove any additional margins */
+        display: block; /* Ensure it's treated as a block element */
+    }
+
+    /* Adjust margins for dots container */
+    #dots-container {
+        margin: 10px 0; /* Space around dots */
+        text-align: center; /* Center the dots */
+    }
 }
