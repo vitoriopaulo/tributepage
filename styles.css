@@ -16,19 +16,26 @@ body {
     text-align: center; /* Center the title */
 }
 
-#gallery {
+##gallery {
     position: relative; /* For absolute positioning of the buttons */
     width: 100%; /* Full width for the gallery */
+    max-width: 800px; /* Max width for the gallery to help center it on larger screens */
+    margin: 0 auto; /* Center the gallery within the viewport */
     padding: 0 15px; /* Small margin on left and right */
 }
 
-#/* Centering gallery images on mobile */
 #img-container {
     display: flex;
-    flex-direction: column; /* Ensure vertical stacking */
-    align-items: center;
-    justify-content: center; /* Center vertically and horizontally */
-    padding: 0 15px; /* Add padding to center on mobile devices */
+    align-items: center; /* Center the image vertically within the container */
+    justify-content: center; /* Center the image horizontally */
+    margin: 0 auto; /* Centering the container */
+}
+
+#image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Full width for image */
+    margin: 0; /* Remove any additional margins */
 }
 
 /* Adjust paragraph spacing for readability */
