@@ -1,6 +1,6 @@
 :root {
     --background-color: black;
-    --primary-color: #ff6347; /* Light red */
+    --primary-color: orangered; /* Light red */
     --text-color: white;
     --icon-color: white; /* Set icon color to white for visibility */
 }
@@ -16,10 +16,10 @@ body {
     text-align: center; /* Center the title */
 }
 
-##gallery {
+#gallery {
     position: relative; /* For absolute positioning of the buttons */
     width: 100%; /* Full width for the gallery */
-    max-width: 800px; /* Max width for the gallery to help center it on larger screens */
+    max-width: 1000px; /* Increase max width for larger images */
     margin: 0 auto; /* Center the gallery within the viewport */
     padding: 0 15px; /* Small margin on left and right */
 }
@@ -34,7 +34,7 @@ body {
 #image {
     width: 100%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Full width for image */
+    max-width: 1000px; /* Set higher max width for larger images on desktop */
     margin: 0; /* Remove any additional margins */
 }
 
@@ -46,12 +46,6 @@ body {
     margin-bottom: 1.5em; /* Space between paragraphs */
 }
 
-#image {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 800px; /* Optional: Set a max-width for larger screens */
-}
-
 .nav-button {
     background-color: transparent;
     border: none; /* Remove button border */
@@ -60,6 +54,8 @@ body {
     cursor: pointer; /* Pointer cursor for buttons */
     padding: 10px; /* Add some padding */
     margin: 0 10px; /* Space between buttons and image */
+    position: relative; /* Ensure buttons are positioned relative for alignment */
+    z-index: 1; /* Ensure buttons are on top of the image */
 }
 
 #dots-container {
@@ -93,12 +89,6 @@ body {
     margin: 0 15%; /* Align text to both limits of the h1 element */
 }
 
-#paragraph {
-    font-size: 1.1rem; /* Increased font size for paragraphs */
-    color: var(--text-color);
-    margin-bottom: 1.5em; /* Increased space between paragraphs */
-}
-
 a {
     outline: none;
     text-decoration: none;
@@ -109,13 +99,87 @@ a:focus {
     outline-offset: 2px;
 }
 
-footer {
-    color: var(--text-color);
+label {
+    color: #ffffff; 
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+/* Contact Form Styles */
+#Contact {
+    margin: 0 15%; /* Align left and right with paragraphs */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: none; 
+    border-bottom: 2px solid #ffffff; 
+    background-color: black;
+    color: #ffffff;
+    padding: 10px 0;
+    width: 100%; /* Full width for inputs */
+    font-size: 16px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ffffff;
+}
+
+/* Resized Submit Button */
+#submit {
+    background-color: orangered;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    width: 100%; /* Make the submit button full-width */
+    border-radius: 25px; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#submit:hover {
+    transform: scale(1.1);
+}
+
+/* Social Media Icons */
+.social-media-icons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    justify-content: center; /* Center the icons */
+    margin-top: 20px; /* Space above the icons */
+    margin-bottom: 40px; /* Add bottom margin from viewport */
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px; /* Width of the icon */
+    height: 40px; /* Height of the icon */
+    background-color: lightgray; /* Background color */
+    border-radius: 50%; /* Make it round */
+    color: #ffffff; /* Icon color */
+    text-align: center; /* Center icon inside */
+    line-height: 40px; /* Center vertically */
+    margin: 0 10px; /* Space between icons */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-icon:hover {
+    background-color: orangered; /* Darker gray on hover */
+}
+
+footer {
+    font-family: 'Raleway', sans-serif; 
+    color: #ffffff;
     text-align: center;
+    margin-top: 20px;
+    margin-left: 12.5%; /* Left margin */
+    margin-right: 12.5%; /* Right margin */
+    margin-bottom: 20px;
+}
+
+.heart {
+    color: orangered;
 }
 
 /* Media Queries for Mobile Responsiveness */

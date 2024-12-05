@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMfMwH2P2k5itgW5f5g9d6p9/0jz7c4aQ8q9sz" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>Pelicula Coffee Table - A Glamorous Tribute to the American Movie Industry</title>
 </head>
 <body>
@@ -18,13 +18,13 @@
   <main id="main">
     <section id="gallery">
       <div id="img-container">
-        <button class="nav-button" id="prev-button">
+        <button class="nav-button" id="prev-button" aria-label="Previous image">
           <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="24" height="24">
             <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/>
           </svg>
         </button>
         <img id="image" src="photos/image1.jpg" alt="Gallery Image">
-        <button class="nav-button" id="next-button">
+        <button class="nav-button" id="next-button" aria-label="Next image">
           <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="24" height="24">
             <path d="M9 6l6 6-6 6L7.59 16.59 12.17 12 7.59 7.41z"/>
           </svg>
@@ -48,13 +48,50 @@
         <p id="paragraph">Designed to complement a diverse array of settings, this coffee table seamlessly fits into residential living rooms and home theaters, as well as stylish lounge areas in cinemas and other entertainment venues.</p>
         <p id="paragraph">Targeted towards the luxury market, this piece is tailored for discerning individuals who appreciate form and aesthetics while valuing exclusivity, originality, creativity, boldness, and a touch of irreverence.</p>
         <p id="paragraph">Are you in search of a furniture piece that ignites passion and will be cherished for a lifetime?</p>
-        <p id="paragraph"><a class="e-mail" href="mailto:vitoriopaulo.arch@gmail.com" target=" .blank">Email the architect, Vitorio Paulo</a> today. It would be a delight to create a work of art that captures your heart at first glance.</p>
+        <p id="paragraph">Be in touch the architect Vitorio Paulo today for a quotation. It would be a delight to create a work of art that captures your heart at first glance.</p>
     </div>
-    <footer>
-      <p>Made with <span style="color: red;">&hearts;</span> by Vitorio Paulo</p>
-    </footer>
-  </main>
+    <section class="main-section" id="Contact">
+      <header class="header-margin">Contact</header>
+      <form action="https://formspree.io/f/mgvepjob" method="POST" id="form">
+          <fieldset>
+              <label for="name" id="name-label">Name: 
+                  <input id="name" type="text" name="name" placeholder="Name" required />
+              </label><br />
+              <label for="email" id="email-label">Email: 
+                  <input id="email" name="email" type="email" placeholder="Email" required />
+              </label><br />
+              <label for="message" id="message-label">Message: 
+                  <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+              </label><br />
+              <input type="submit" value="Submit" id="submit"/>
+          </fieldset>
+      </form>
+  </section>
 
+  <footer id="Footer">
+      Made with <i class="fas fa-heart heart"></i> by Vitorio Paulo for FreeCodeCamp
+  </footer>
+
+  <!-- Social Media Icons -->
+  <div class="social-media-icons">
+    <a href="https://www.facebook.com/vitoriopaulo.arch" target="_blank" class="social-icon" aria-label="Visit Facebook Profile">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/vitoriopaulo.arch" target="_blank" class="social-icon" aria-label="Visit Instagram Profile">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/vitoriopaulo" target="_blank" class="social-icon" aria-label="Visit LinkedIn Profile">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://www.youtube.com/user/vitoriopaulo" target="_blank" class="social-icon" aria-label="Visit YouTube Channel">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://www.github.com/vitoriopaulo" target="_blank" class="social-icon" aria-label="Visit GitHub Profile">
+        <i class="fab fa-github"></i>
+    </a>
+  </div>
+
+  <!-- Link to external JavaScript file -->
   <script src="scripts.js"></script>
 </body>
-</html>
+</html> 

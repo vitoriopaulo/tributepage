@@ -8,7 +8,7 @@ The theme of this project is a tribute page dedicated to the American movie indu
 
 ## About the Pelicula Coffee Table
 
-The **Pelicula Coffee Table** pays a passionate and honorable tribute to the American movie industry. It embodies the essence of cinematic art and design.
+The **Pelicula Coffee Table** pays a passionate and honorable tribute to the Glamorous American movie industry. It embodies the essence of cinematic art and design.
 
 ## Enjoyment
 
