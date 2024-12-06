@@ -127,16 +127,17 @@ textarea::placeholder {
     color: #ffffff;
 }
 
-/* Resized Submit Button */
+/* Resized Submit Button with Margins */
 #submit {
     background-color: orangered;
     color: #ffffff;
     border: none;
     padding: 15px;
-    width: 100%; /* Make the submit button full-width */
+    width: calc(100% - 30px); /* Adjust width for margins */
     border-radius: 25px; 
     cursor: pointer;
     transition: transform 0.3s ease;
+    margin: 0 15px; /* Add left and right margins */
 }
 
 #submit:hover {
